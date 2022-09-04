@@ -1,0 +1,671 @@
+body{
+    text-transform: capitalize;
+}
+.title-header-section{
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+ .line{
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: brown;
+    margin: 50px auto;
+    margin-top: -10;
+}
+/* <!-- /////////////////////////////1-start-header-wabsite\\\\\\\\\\\\\\\\\\\\ --> */
+.parent-header{
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.img-header{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+
+}
+.ul-header{
+    float: right;
+    margin-right: 60px;
+}
+.ul-header li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 25px;
+}
+.ul-header li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: burlywood;
+}
+/* <!-- /////////////////////////////end-header-wabsite\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- /////////////////////////////2-start-section->Welcome To Novels library\\\\\\\\\\\\\\\\\\\\ --> */
+.img-library{
+    width:100%;
+    height: 100vh;
+    background-image:url(../image/Screenshot_2022-08-11-18-30-31-370_com.android.chrome.png);
+    position: relative;
+}
+.black-img-library{
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.info-library{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 700px;
+text-align:center;
+}
+ .title-library{
+    color: aliceblue;
+    font-size: 50px;
+ }
+ .letter1-library{
+    color: aliceblue;
+    font-size: 25px;
+    margin-top: -30px;
+ }
+ .button1-library ,.button2-library {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    font-size: 20px;
+    text-align:center;
+    cursor: pointer;
+    border: 0;
+    margin: 0 10px;
+ }
+.button2-library{
+    background-color: blue;
+}
+.button1-library:hover ,.button2-library:hover{
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* <!-- /////////////////////////////end-section-Welcome To Novels library\\\\\\\\\\\\\\\\\\\\ --> */
+        
+/* <!-- /////////////////////////////3-start-section-Welcome To The World Of Novel\\\\\\\\\\\\\\\\\\\\ --> */
+.container-world{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.parent-world{
+  overflow: auto;
+}
+.world-item{
+    color: black;
+    height: 250px;
+    width: 30%;
+    border: 3px solid royalblue ;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.world-item i{
+    color: blue;
+    font-size: 30px;
+}
+.world-item .a-world-item{
+text-decoration: none;
+font-size: 20px;
+color: red;
+}
+.world-item .p-world-item{
+    opacity: .6;
+    color: gray;
+    text-align: center;
+}
+.bob{
+    margin:0 5%;
+}
+.world-item:after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.world-item:hover:after{
+    width: 100%;
+    height: 100%;
+   transition: .5s;
+   z-index: -1;
+}
+.world-item:hover .title-world-item{
+    color: aliceblue;
+}
+/* <!-- /////////////////////////////end-section->Welcome To The World Of Novel\\\\\\\\\\\\\\\\\\\\ --> */
+
+      /* <!-- /////////////////////////////4-start-section-featured words\\\\\\\\\\\\\\\\\\\\ --> */
+.big{
+    background-color: burlywood;
+}
+.container-featured{
+width: 90%;
+margin: auto;
+}
+.parent-featured{
+    overflow: auto;
+    padding-left: 30px;
+}
+.featured-item{
+    display: block;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+.featured-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.featured-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+}
+.featured-icon h3{
+    color: bisque;
+    margin-top: -10px;
+}
+.featured-icon i{
+    margin-left: 10px;
+    width: 40px;
+    height:40px;
+    background-color: cornflowerblue;
+    line-height: 40px;
+    color: antiquewhite;
+}
+.featured-icon p{
+    color: royalblue; 
+    margin-top: 100px; 
+}
+.featured-item:hover .featured-icon{
+    visibility: visible ;
+}
+/* <!-- /////////////////////////////end-section-featured words\\\\\\\\\\\\\\\\\\\\ --> */
+
+/* <!-- /////////////////////////////5-start-section-what we offer\\\\\\\\\\\\\\\\\\\\ --> */
+.container-offer{
+    width: 80%;
+    margin: auto;
+}
+.parent-offer{
+    overflow: auto;
+}
+.offer-item{
+    display: block;
+    width: 30%;
+    height: 190px;
+    border: 5px solid blue;
+    float: left;
+    background-color: black;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.aba{
+    margin: 0 5%;
+}
+.offer-item h2{
+    color: rgb(254, 251, 251);
+    display: inline;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    z-index: 2;
+}
+.p-offer{
+    opacity: .7;
+    color:rgb(250, 246, 246);
+    z-index: 2;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    right: 10px;
+}
+.offer-item i{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 40px;
+    color: red;
+    z-index: 2;
+}
+.offer-item:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right:  0;
+    background-color: burlywood;
+    opacity: .7;
+}
+ .offer-item:hover:after{
+ width: 100%;
+ height: 100%;
+ transition: 1s;
+ }
+ /* <!-- /////////////////////////////end-section-what we offer\\\\\\\\\\\\\\\\\\\\ --> */
+
+ /* <!-- /////////////////////////////6-start-section-why choose novel.com\\\\\\\\\\\\\\\\\\\\ --> */
+ .parent-why{
+   overflow: auto;
+}
+.why-item{
+    width:50%;
+    float:left;
+    padding-bottom: 100;
+}
+.p-why{
+    font-size: 20px;
+    padding-left: 50px;
+}
+.why-list{
+    padding-right: 20px;
+    color:gray;
+    line-height: 2;
+    font-size: 18px;
+    list-style: none;
+}
+.why-list li i {
+    color: blue;
+    padding-right: 5;
+}
+.why-list li{
+    margin-bottom: 15px;
+    color: grey;
+}
+.img-why {
+    width: 500px;
+    height: 400px;
+    margin-left: 150px;
+}
+.why-ball{
+    list-style: none;
+    text-align: center;
+}
+.why-ball li{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.why-ball li.small-ball{
+    background-color: blue;
+}
+.why-ball li:hover{
+    background-color: blue;
+}
+
+.parent-photo-why{
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../image/images\ \(1\).jpg);
+    position: relative;
+}
+.black-photo-why{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+     background-color: black;
+     overflow: auto;
+}
+.photo-why-item{
+    color: blue;
+    float: left;
+    width: 25%;
+    text-align: center;
+   margin-top: 100px ;
+}
+.photo-why-item i{
+    font-size: 40px
+}
+.photo-why-item h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+}
+.photo-why-item p{
+    color: azure;
+    font-size: 25px;
+    margin-top: -25px;
+}
+/* <!-- /////////////////////////////end-section-why choose novel.com\\\\\\\\\\\\\\\\\\\\ --> */
+
+/* <!-- /////////////////////////////7-start-section-subscriptions table\\\\\\\\\\\\\\\\\\\\ --> */
+.container-sub{
+    width: 80%;
+    margin: auto;
+}
+.parent-sub{
+    overflow: auto;
+}
+.sub-item{
+    float: left;
+    border: 2px solid black;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    position: relative;
+}
+.title-sub{
+    font-size: 25px;
+    font-weight: bold;
+}
+.num-sub{
+    border: 2px solid royalblue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: auto;
+}
+.p-sub{
+    opacity: .7;
+    color: black;
+    margin: 20px 20px;
+}
+.button-sub{
+    border: 2px solid red;
+    outline: 3px solid royalblue;
+    padding: 5px 40px;
+    font-size: 20px;
+    margin-bottom: 20px; 
+    background-color: rgb(184, 182, 182);
+}
+.m{
+    margin: 0 5%;
+}
+.sub-item:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .5;
+}
+.sub-item:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.sub-item:hover .title-sub {
+    color: red;
+}
+.sub-item:hover  .letter-sub{
+    color: red;
+}
+.photo-sub{
+    margin-top: 300px;
+    background-image: url(../image/1057248-102915-cc-writing-novel-month-img.webp);
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.white-photo-sub{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(235, 212, 185, 0.5);
+    overflow: auto;
+}
+.photo-sub-item{
+    width: 80%;
+    margin: auto;
+   position: relative;
+}
+.photo-sub-design{
+    float: left;
+    width: 30%;
+    margin:0 120px;
+    position: relative;
+    font-weight: bold;
+}
+.img-sub{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 90px; 
+}
+.photo-sub-design h3{
+    position: absolute;
+    top: 90px;
+    left:130;
+    font-size: 28px;
+}
+.photo-sub-design p{
+    position: absolute;
+    top: 130;
+    left: 130;
+    color:darkblue;
+    font-size: 21px;
+}
+.photo-sub-design span{
+    position: absolute;
+    top: 200;
+    left: 10;
+}
+/* <!-- /////////////////////////////end-section-subscriptions table\\\\\\\\\\\\\\\\\\\\ --> */
+
+/* <!-- /////////////////////////////8-start-section-Our Team\\\\\\\\\\\\\\\\\\\\ --> */
+.container-team{
+    width: 80%;
+    margin: auto;
+}
+.parent-team{
+overflow: auto;
+}
+.item-team{
+    float: left;
+    width: 30%;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #3b3b3b;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    position: relative;
+}
+.img-team{
+    position: relative;
+}
+.img-on-team{
+width: 320px;
+height: 250px;
+}
+.h3-team{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 30px;
+}
+.p-team{
+    color: red;
+    font-size: 18px;
+}
+.ss{
+    margin: 0 5%;
+}
+.icon-team{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    visibility: hidden;
+}
+.icon-team a{
+display: block;
+color: white;
+width: 50px;
+height: 50px;
+background-color: royalblue;
+margin-left: auto;
+}
+.icon-team a i{
+line-height: 50px;
+}
+.item-team:hover .icon-team{
+    visibility: visible;
+}
+.item-team:hover .h3-team{
+    color: antiquewhite;
+}
+.item-team:hover .p-team{
+    color: aquamarine;
+}
+.item-team:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: red;
+    opacity: .3;
+}
+.item-team:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+/* <!-- /////////////////////////////end-section-Our Team\\\\\\\\\\\\\\\\\\\\ --> */
+
+       /* <!-- /////////////////////////////9-start-section-recent news\\\\\\\\\\\\\\\\\\\\ --> */
+       .container-recent{
+        width: 80%;
+        margin: auto;
+       }
+       .parent-recent{
+        overflow: auto;
+       }
+       .item-recent{
+        float: left;
+        width: 30%;
+        background-color: #a8a8a8;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+       }
+       .rec{
+        margin: 0 5%;
+       }
+       .img-on-recent{
+        height: 250px;
+        width: 320px;
+       }
+       .info-recent a, .h3-recent ,.p-recent  {
+        padding-left: 40px;
+       }
+       .list-recent{
+        list-style: none;
+        margin: 20px 0;
+       }
+       .list-recent li{
+        display: inline;
+       }
+       .item-recent i{
+        color: blue;
+        margin: 3px 5px;
+       }
+       .link-recent{
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+       }
+       .item-recent:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        background-color: royalblue;
+        opacity: .5;
+       }
+       .item-recent:hover:after{ 
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+       }
+      /* <!-- /////////////////////////////end-section-recent news\\\\\\\\\\\\\\\\\\\\ --> */
+
+      /* <!-- /////////////////////////////10-start-section-the end\\\\\\\\\\\\\\\\\\\\ --> */
+      .parent-the-end{
+        background-color: burlywood;
+        margin-top: 200px;
+        overflow: auto;
+      }
+      .photo-the-end{
+        margin: 100px 0;
+        text-align: center;
+      }
+      .ul-end{
+        list-style: none;
+      }
+      .ul-end li{
+        display: inline;
+      }
+      .ul-end i{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: chocolate;
+        font-size: 30px;
+        line-height: 80px;
+        margin: 20px 0;
+        color: antiquewhite;
+      }
+      .li-end:hover  i{
+        background-color: dodgerblue
+      }
+      .p-the-end{
+        padding-left: 40px;
+      }
+      /* <!-- /////////////////////////////end-section-the end\\\\\\\\\\\\\\\\\\\\ --> */
